@@ -1,11 +1,9 @@
 <header>
 <div class="content clearfix">
-<?php echo img(array('src' => 'assets/images/assets/logo.png', 'class' => 'logo', 'alt' => 'Logo Name')); ?>
+<img src="<?php echo base_url(); ?>assets/images/assets/logo.png" class="logo" alt="<?php echo SITE_NAME; ?>" />
 <?php echo SITE_NAME; ?>
-<?php if(!empty($show_menu)) : ?>
-	<div class="navigation">
-	<?php $this->load->view('includes/menu_view'); ?>
-	</div>
-<?php endif; ?>
+<nav>
+<?php $this->load->view('includes/menu_view'); ?>
+</nav>
 </div>
 </header>

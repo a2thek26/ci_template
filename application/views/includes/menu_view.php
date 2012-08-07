@@ -35,7 +35,7 @@ foreach ($menu as $item) :
 	$item_class .= $item['menu_page'];
 	if(!empty($item['class'])) $item_class .= " " . $item['class'];
 ?>
-	<li class="<?php echo $item_class?>"><a href="<?php echo base_url() . $item['menu_link']?>"><?php echo $item['menu_title']?></a></li>
+	<li class="<?php echo $item_class?>"><a href="<?php echo $item['menu_link']?>"><?php echo $item['menu_title']?></a></li>
 
 <?php 
 $counter++;

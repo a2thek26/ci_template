@@ -6,14 +6,14 @@
 */
 $menu = array(
 			array(
-				'menu_link' 	=> base_url() . 'dashboard',	
-				'menu_page' 	=> 'dashboard',
-				'menu_title' 	=> 'My Dashboard'
+				'menu_link' 	=> base_url() . 'page1',	
+				'menu_page' 	=> 'page1',
+				'menu_title' 	=> 'Page 1'
 				),
 			array(
-				'menu_link' 	=> base_url() . 'goals',
-				'menu_page' 	=> 'goals',
-				'menu_title' 	=> 'MagicGoals'
+				'menu_link' 	=> base_url() . 'page2',
+				'menu_page' 	=> 'page2',
+				'menu_title' 	=> 'Page 2'
 				)
 );
 

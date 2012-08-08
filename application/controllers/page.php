@@ -10,7 +10,6 @@
 | $data['page_title']		//string - page title (required)
 | $data['main_content']		//string - page_view (required)
 | $data['message']			//string - message (optional)
-| $data['show_menu'] 		//boolean - show the main menu of site (optional)
 */ 
 
 class Page extends CI_Controller {

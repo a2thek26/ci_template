@@ -21,7 +21,7 @@ if(isset($css_includes)) {
 <script src="<?php echo base_url();?>assets/js/libs/modernizr-2.5.3.min.js"></script>	
 </head>
 
-<body id="<?php echo $page?>">
+<body id="<?php echo $page?>" class="<?php if(isset($section)) echo $section; ?>">
  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="wrapper">
 <?php $this->load->view('includes/framework_header_view'); ?>

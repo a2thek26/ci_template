@@ -23,6 +23,8 @@ class Page extends CI_Controller {
 		$data['page'] 			= "page";
 		$data['page_title'] 	= "Page Title";
 		$data['message']		= $this->session->flashdata('message');
+		//$data['message']		= "Alert message will go here assuming there is one.";
+
 		$data['main_content'] 	= 'page_view';
 		
 		$this->load->view('includes/template_view', $data);

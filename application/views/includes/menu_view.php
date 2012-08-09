@@ -6,9 +6,9 @@
 */
 $menu = array(
 			array(
-				'menu_link' 	=> base_url() . 'page1',	
-				'menu_page' 	=> 'page1',
-				'menu_title' 	=> 'Page 1'
+				'menu_link' 	=> base_url() . 'page',	
+				'menu_page' 	=> 'page',
+				'menu_title' 	=> 'Page'
 				),
 			array(
 				'menu_link' 	=> base_url() . 'page2',

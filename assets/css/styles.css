@@ -156,12 +156,39 @@ footer p { margin-bottom:0; }
 nav { float:right; }
 nav .menu { float:right; list-style:none; margin:0; padding:5px; }
 nav .menu li { float:left; margin:0; padding:0; }
-nav .menu li a { color:#fff; font-size:13px; font-weight:bold; text-transform:uppercase; }
-nav .menu li a { background:#777; border-left:1px solid #959595; border-right:1px solid #959595; border-bottom:1px solid #a9a9a9; border-radius:0 0 4px 4px; }
+
+nav .menu li a { font-size:13px; font-weight:bold; color:#050505; text-transform:uppercase; }
 nav .menu li a { padding:10px 20px; margin-left:4px; }
-nav .menu li a:hover { background:#232323; text-decoration:none; box-shadow:0 2px 4px rgba(0,0,0,.3); }
-nav .menu li a { -webkit-transition:all .2s linear; }
-nav .menu li.active a { background:#232323; box-shadow:0 2px 4px rgba(0,0,0,.3); }
+nav .menu li a {
+  background: -webkit-linear-gradient( top, #ffffff 0%, #dbdbdb 50%, #b5b5b5);
+  background: -moz-linear-gradient( top, #ffffff 0%, #dbdbdb 50%, #b5b5b5);
+  background: -o-linear-gradient( top, #ffffff 0%, #dbdbdb 50%, #b5b5b5);
+  background: -ms-linear-gradient( top, #ffffff 0%, #dbdbdb 50%, #b5b5b5);
+  background: linear-gradient( top, #ffffff 0%, #dbdbdb 50%, #b5b5b5);
+  background: -webkit-gradient( linear, left top, left bottom, from(#ffffff), color-stop(0.50, #dbdbdb), to(#b5b5b5));
+  border-radius: 2px;
+  border: 1px solid #949494;
+
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2), 0 1px 0 rgba(255,255,255,1);
+}
+
+nav .menu li a:hover {
+  background: #b5b5b5;
+  text-decoration: none;
+
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.3);
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+
+nav .menu li a {
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+nav .menu li.active a { background: #efefef; }
 nav .menu li.last { margin-right:30px; }
 
 /* FORM > INPUTS */

@@ -27,7 +27,7 @@ class Page extends CI_Controller {
 
 		$data['main_content'] 	= 'page_view';
 		
-		$this->load->view('includes/template_view', $data);
+		$this->load->view('_includes/template_view', $data);
 		
 	}
 }

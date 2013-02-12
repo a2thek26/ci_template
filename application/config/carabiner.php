@@ -96,7 +96,7 @@ $config['combine'] = TRUE;
 |
 */
 
-$config['minify_js'] = TRUE;
+$config['minify_js'] = FALSE;
 
 
 /*
@@ -159,6 +159,7 @@ $config['replace_values'] = array('__IMAGE_URL__' => base_url() . 'assets/images
 
 $config['groups']['library']  = array('js' => array(
                                         array('libs/jquery-1.9.1.js'),
+                                        array('libs/jquery-ui-1.10.0.custom.js'),
                                         array('libs/jquery.dataSelector.js'),
                                         array('libs/jquery.metadata.js'),
                                         array('libs/jquery.validate.js'),

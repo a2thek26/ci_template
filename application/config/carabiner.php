@@ -158,11 +158,10 @@ $config['replace_values'] = array('__IMAGE_URL__' => base_url() . 'assets/images
 */
 
 $config['groups']['library']  = array('js' => array(
-                                        array('libs/jquery-latest.min.js'),
-                                        array('libs/jquery-ui.min.js'),
+                                        array('libs/jquery-1.9.1.js'),
                                         array('libs/jquery.dataSelector.js'),
                                         array('libs/jquery.metadata.js'),
-                                        array('libs/jquery.validate.min.js'),
+                                        array('libs/jquery.validate.js'),
                                         array('libs/jquery.blockUI.js')
                                       )
                                     );

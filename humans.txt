@@ -1,47 +1,19 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
   Development Manager:  Adam Kelsven
   Senior Developer:     Mickey Freeman
-  Senior Developer:     Marlon Harrison
+  Developer:            Chris Taylor
   Developer:            Scott Trsar
-  Front End Developer:  Chris Taylor
-  Site: http://www.envisionitmedia.com
-  Twitter:
-  Location:
+  Developer:            Derrek Schlesselman
+  Site:                 http://www.envisionitmedia.com
+  Location:             Chicago, IL
 
 /* THANKS */
   Names (& URL):
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
-
-
-
-                               -o/-
-                               +oo//-
-                              :ooo+//:
-                             -ooooo///-
-                             /oooooo//:
-                            :ooooooo+//-
-                           -+oooooooo///-
-           -://////////////+oooooooooo++////////////::
-            :+ooooooooooooooooooooooooooooooooooooo+:::-
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-
-                     -:+ooooooooooooooooo+:://////:--
-                       /ooooooooooooooooo+//////:-
-                      -ooooooooooooooooooo////-
-                      /ooooooooo+oooooooooo//:
-                     :ooooooo+/::/+oooooooo+//-
-                    -oooooo/::///////+oooooo///-
-                    /ooo+::://////:---:/+oooo//:
-                   -o+/::///////:-      -:/+o+//-
-                   :-:///////:-            -:/://
-                     -////:-                 --//:
-                       --                       -:
+  Standards:            HTML5, CSS3
+  Components:           Modernizr, jQuery, Twitter Bootstrap
+  Software:             CodeIgniter

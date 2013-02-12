@@ -207,6 +207,23 @@ class REST_Controller extends CI_Controller {
 		call_user_func_array(array($this, $controller_method), $arguments);
 	}
 
+	/**
+   * New response method that will make use of the existing reponse method after creating 
+   * a standard response object
+   * 
+   * @author Mickey Freeman <mickey.freeman@eimchicago.com>
+   * @param bool $success Success or failure of the request
+   * @param string $message Response message, error if success if false
+   * @param array $data data response from the request
+   */
+  public function ajax_response($success = true, $message = null, $data = array()) 
+  {
+    $ajax_response = array('success' => $success,
+                           'message' => $message,
+                           'data'    => $data);
+    $this->response($ajax_response, 200);
+  } // end function ajax_response()
+
 	/*
 	 * response
 	 *

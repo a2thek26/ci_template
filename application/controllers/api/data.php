@@ -1,27 +1,62 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?
+// must be within the CodeIgniter application
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-// This can be removed if you use __autoload() in config.php
-require(APPPATH.'/libraries/REST_Controller.php');
+/**
+ * Require Rest Controller
+ */
+require APPPATH . '/libraries/REST_Controller.php';
 
+/**
+ * Data API Controller
+ * 
+ * File Containing the Data API controller
+ * 
+ * @category  envisionit media
+ * @package   Data API
+ * @author    envisionit media <development@eimchicago.com>
+ * @copyright (c) 2013, envisionit media (http://www.envisionitmedia.com)
+ * @version   1.0.0 
+ */
+
+/**
+ * Data API Controller
+ * 
+ * Data API controller
+ * 
+ * @category  eim
+ * @package   Data API
+ * @author    envisionit media <development@eimchicago.com>
+ * @copyright (c) 2013, envisionit media (http://www.envisionitmedia.com)
+ * @version   1.0.0 
+ */
 class Data extends REST_Controller
 {
 
-	function __construct() {
-		parent::__construct();
-		$this->load->model('data_model');
-
-	}
-	
-	function songs_get() {
-		$id 	= $this->get('id');
-		$songs	= $this->data_model->get_songs_by_album_id($id);
-		
-		if($songs) {
-			$data['playlist'] 	= $songs;
-			$data['success']	= TRUE;
-		} else {
-			$data['error']		= "There was an error finding the requested album.";
-		}
-		$this->response($data, 200);
-	}
+  /**
+   * Controller Constructor.
+   */
+  function __construct() 
+  {
+    parent::__construct();
+    $this->load->model('data');
+  }
+  
+  /**
+   * Simple get request
+   * Respond with ajax_response(TRUE|FALSE, 'Message', array());
+   * @return void
+   */
+  function data_get() 
+  {
+    // not an actual call, just for example
+    $this->data->loadFromDb($this->get('id'));
+    $data = $this->data->getValues();
+    
+    if($data) {
+      $this->ajax_response(TRUE, '', $data);
+    } else {
+      $this->ajax_response(FALSE, 'There was an error finding the requested album.');
+    }   
+  }
 }

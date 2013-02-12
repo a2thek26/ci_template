@@ -17,9 +17,9 @@ $menu = array(
 				)
 );
 
-$total_items 	= count($menu);
-$counter 		= 0;
-$counter2 		= 0;
+$total_items = count($menu);
+$counter     = 0;
+$counter2    = 0;
 ?>
 
 <ul class="menu">

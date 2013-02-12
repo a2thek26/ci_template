@@ -7,22 +7,22 @@
  *
  * @package        	CodeIgniter
  * @subpackage    	Libraries
- * @category    	Libraries
+ * @category    	  Libraries
  * @author        	Philip Sturgeon
  * @license         http://philsturgeon.co.uk/code/dbad-license
- * @link			http://getsparks.org/packages/curl/show
+ * @link			      http://getsparks.org/packages/curl/show
  */
 class Curl {
 
-	private $_ci;				// CodeIgniter instance
-	private $response = '';		  // Contains the cURL response for debug
-	private $session;		   // Contains the cURL handler for a session
-	private $url;			   // URL of the session
+	private $_ci;				        // CodeIgniter instance
+	private $response = '';	    // Contains the cURL response for debug
+	private $session;		        // Contains the cURL handler for a session
+	private $url;			          // URL of the session
 	private $options = array(); // Populates curl_setopt_array
 	private $headers = array(); // Populates extra HTTP headers
-	public $error_code;		 // Error code returned as an int
-	public $error_string;	   // Error message returned as a string
-	public $info;			   // Returned after request (elapsed time, etc)
+	public $error_code;		      // Error code returned as an int
+	public $error_string;	      // Error message returned as a string
+	public $info;			          // Returned after request (elapsed time, etc)
 
 	function __construct($url = '')
 	{

@@ -158,34 +158,41 @@ $config['replace_values'] = array('__IMAGE_URL__' => base_url() . 'assets/images
 */
 
 $config['groups']['library']  = array('js' => array(
-                                      array('libs/jquery-latest.min.js'),
-                                      array('libs/jquery-ui.min.js'),
-                                      array('libs/jquery.dataSelector.js'),
-                                      array('libs/jquery.metadata.js'),
-                                      array('libs/jquery.validate.min.js'),
-                                      array('libs/jquery.blockUI.js')
+                                        array('libs/jquery-latest.min.js'),
+                                        array('libs/jquery-ui.min.js'),
+                                        array('libs/jquery.dataSelector.js'),
+                                        array('libs/jquery.metadata.js'),
+                                        array('libs/jquery.validate.min.js'),
+                                        array('libs/jquery.blockUI.js')
                                       )
                                     );
 
 $config['groups']['bootstrap'] = array('js' => array(
-                                      array('libs/bootstrap-affix.js'),
-                                      array('libs/bootstrap-alert.js'),
-                                      array('libs/bootstrap-button.js'),
-                                      array('libs/bootstrap-carousel.js'),
-                                      array('libs/bootstrap-collapse.js'),
-                                      array('libs/bootstrap-dropdown.js'),
-                                      array('libs/bootstrap-modal.js'),
-                                      array('libs/bootstrap-tooltip.js'),
-                                      array('libs/bootstrap-popover.js'),
-                                      array('libs/bootstrap-scrollspy.js'),
-                                      array('libs/bootstrap-tab.js'),
-                                      array('libs/bootstrap-transition.js'),
-                                      array('libs/bootstrap-typeahead.js')
+                                        array('libs/bootstrap-affix.js'),
+                                        array('libs/bootstrap-alert.js'),
+                                        array('libs/bootstrap-button.js'),
+                                        array('libs/bootstrap-carousel.js'),
+                                        array('libs/bootstrap-collapse.js'),
+                                        array('libs/bootstrap-dropdown.js'),
+                                        array('libs/bootstrap-modal.js'),
+                                        array('libs/bootstrap-tooltip.js'),
+                                        array('libs/bootstrap-popover.js'),
+                                        array('libs/bootstrap-scrollspy.js'),
+                                        array('libs/bootstrap-tab.js'),
+                                        array('libs/bootstrap-transition.js'),
+                                        array('libs/bootstrap-typeahead.js')
                                       ),
-                                      'css' => array( array('theme.css') )
-                                      );
-$config['groups']['custom'] = array('js' => array(array('control.js')),
-                                    'css' => array(array('styles.css'))
+                                      'css' => array( 
+                                        array('theme.css') 
+                                      )
+                                    );
+$config['groups']['custom']    = array('js' => array(
+                                        array('control.js')
+                                      ),
+                                      'css' => array(
+                                        array('structure.css'),
+                                        array('styles.css')
+                                      )
                                     );
 
 // jQuery (latest, as of 1.xx)

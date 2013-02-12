@@ -27,5 +27,21 @@
  <!--[if lt IE 7]>
  <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
  <![endif]-->
-<div class="wrapper">
-<?php $this->load->view('_includes/framework_header_view'); ?>
+<div id="wrap">
+  <header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><?php echo SITE_NAME; ?></a>
+          <div class="nav-collapse collapse">
+            <?php $this->load->view('_includes/menu_view'); ?>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  </header>

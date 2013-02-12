@@ -22,7 +22,7 @@ $counter     = 0;
 $counter2    = 0;
 ?>
 
-<ul class="menu">
+<ul class="nav">
 <?php 
 foreach ($menu as $item) :
 	$item_class = ($page == $item['menu_page']) ? "active " : "";

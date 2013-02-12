@@ -1,6 +1,10 @@
-<div class="push"></div>
-</div> <!-- end wrapper -->
-<?php $this->load->view('_includes/framework_footer_view'); ?>
+  <div id="push"></div>
+</div> <!-- end #wrap -->
+<footer>
+  <div class="content">
+    <p>&copy; <?php echo mdate("%Y", time()) . " " . SITE_NAME . " All rights reserved."; ?></p>
+  </div>
+</footer>
 
 <?php 
   $this->carabiner->display('library', 'js');

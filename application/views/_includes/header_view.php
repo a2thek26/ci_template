@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <?php
-  // load all minified css into 1 compressed file
+  // load all minified css into compressed files
   $this->carabiner->display('library', 'css');
   $this->carabiner->display($this->config->item('framework'), 'css');
   $this->carabiner->display('custom', 'css');

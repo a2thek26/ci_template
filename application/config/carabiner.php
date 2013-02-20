@@ -96,7 +96,7 @@ $config['combine'] = TRUE;
 |
 */
 
-$config['minify_js'] = FALSE;
+$config['minify_js'] = TRUE;
 
 
 /*
@@ -134,28 +134,12 @@ $config['replace_values'] = array('__IMAGE_URL__' => base_url() . 'assets/images
                                   '__FONT_URL__'  => base_url() . 'assets/fonts/',
                                   '__BASE_URL__'  => base_url());
 
-/*
-|--------------------------------------------------------------------------
-| Predifined Asset Groups
-|--------------------------------------------------------------------------
-|
-| Any groups defined here will automatically be included.  Of course, they
-| won't be displayed unless you explicity display them ( like this: $this->carabiner->display('jquery') )
-| See docs for more.
-| 
-| Currently created groups:
-| > jQuery (latest in 1.xx version)
-| > jQuery UI (latest in 1.xx version)
-| > Ext Core (latest in 3.xx version)
-| > Chrome Frame (latest in 1.xx version)
-| > Prototype (latest in 1.x.x.x version)
-| > script.aculo.us (latest in 1.x.x version)
-| > Mootools (1.xx version)
-| > Dojo (latest in 1.xx version)
-| > SWFObject (latest in 2.xx version)
-| > YUI (latest core JS/CSS in 2.x.x version)
-|
-*/
+/**
+ * ---------------------------------
+ * CUSTOM ASSET GROUPS
+ * Loads EIM Developers bootstrap framework, javascript libraries, etc
+ * ---------------------------------
+ */
 
 $config['groups']['library']  = array('js' => array(
                                         array('libs/jquery-1.9.1.js'),
@@ -183,7 +167,7 @@ $config['groups']['bootstrap'] = array('js' => array(
                                         array('libs/bootstrap-typeahead.js')
                                       ),
                                       'css' => array( 
-                                        array('theme.css') 
+                                        array('framework.css') 
                                       )
                                     );
 $config['groups']['custom']    = array('js' => array(
@@ -194,6 +178,30 @@ $config['groups']['custom']    = array('js' => array(
                                         array('styles.css')
                                       )
                                     );
+
+
+/*
+|--------------------------------------------------------------------------
+| Predifined Asset Groups
+|--------------------------------------------------------------------------
+|
+| Any groups defined here will automatically be included.  Of course, they
+| won't be displayed unless you explicity display them ( like this: $this->carabiner->display('jquery') )
+| See docs for more.
+| 
+| Currently created groups:
+| > jQuery (latest in 1.xx version)
+| > jQuery UI (latest in 1.xx version)
+| > Ext Core (latest in 3.xx version)
+| > Chrome Frame (latest in 1.xx version)
+| > Prototype (latest in 1.x.x.x version)
+| > script.aculo.us (latest in 1.x.x version)
+| > Mootools (1.xx version)
+| > Dojo (latest in 1.xx version)
+| > SWFObject (latest in 2.xx version)
+| > YUI (latest core JS/CSS in 2.x.x version)
+|
+*/
 
 // jQuery (latest, as of 1.xx)
 $config['groups']['jquery'] = array(

@@ -6,10 +6,12 @@
  * Make the footer stick to bottom of window
  * ---------------------------------
  */
+@footerHeight: 60px;
+
 html, body { height:100%; }
-#wrap { min-height:100%; height:auto !important; height:100%; margin:0 auto -60px; }
+#wrap { min-height:100%; height:auto !important; height:100%; margin:0 auto -@footerHeight; }
 #push,
-footer { height:60px; }
+footer { height:@footerHeight; }
 @media (max-width: 767px) {
   footer { margin-left:-20px; margin-right:-20px; padding-left:20px; padding-right:20px; }
 }

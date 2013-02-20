@@ -50,8 +50,8 @@ class Public_page extends CI_Controller
       );
 
     // add js and css custom to this page
-    $this->carabiner->js('');
-    $this->carabiner->css('');
+    //$this->carabiner->js('');
+    //$this->carabiner->css('');
 
     $this->load->view('_includes/template_view', $data);
     
